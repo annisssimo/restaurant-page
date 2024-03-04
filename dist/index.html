@@ -4,19 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annisssimo's restaurant</title>
+    <style>
+
+        :root {
+            --orange: #EA6D27;
+        }
+
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            padding: 16px;
+            width: 1219px;
+            justify-content: space-between;
+        }
+
+        #content {
+            display: flex;
+            gap: 64px;
+            padding: 64px 0px;
+            max-width: 1219px;
+        }
+
+        #logo {
+            width: 198px;
+            height: 55px;
+            position: relative;
+            bottom: 18px;
+        }
+
+        button {
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+        }
+
+        .link {
+            background: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .book-btn {
+            background-color: var(--orange);
+            padding: 10px 20px;
+            border-radius: 12px 2px;
+            color: white;
+        }
+
+        .menu-button {
+            background: none;
+            background-color: black;
+            padding: 10px 20px;
+            border-radius: 12px 2px;
+            color: white;
+            margin-right: 24px;
+        }
+
+        img[src="../img/main-photo.png"] {
+            width: 390px;
+            height: auto;
+        }
+
+        img[src="../img/dish.png"] {
+            width: 260px;
+            position: relative;
+            left: -128px;
+            top: -200px;
+        }
+
+        .home-text {
+            padding-top: 4%;
+        }
+
+        h1 {
+            font-size: 64px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div id="content">
-            <img src="./" alt="">
-        </div>
+        <img id="logo" src="../img/logo.png">
         <nav>
-            <button>Home</button>
-            <button>Menu</button>
-            <button>Book</button>
-            <button>Contact</button>
+            <button class="link">Home</button>
+            <button class="link">Menu</button>
+            <button class="link">About</button>
+            <button class="book-btn">Book a table</button>
         </nav>
     </header>
+
+    <div id="content">
+        <div class="home-text">
+            <h1>Best food for you in Annisssimo's</h1>
+            <p>Experience the finest dining with a touch of perfection at Annisssimo's restaurant. Our chefs craft exquisite dishes that tantalize your taste buds, and our warm ambiance ensures an unforgettable dining experience.</p>
+            <button class="menu-button">Menu</button>
+            <button class="book-btn">Book a table</button>
+        </div>
+        <div class="home-images">
+            <img src="../img/main-photo.png">
+            <img src="../img/dish.png">
+        </div>
+    </div>
     
     <script src="main.js"></script>
 </body>
