@@ -15,8 +15,8 @@ export function generateHomePage() {
     menuBtn.classList.add('menu-button');
     bookBtn.classList.add('book-btn');
 
-    img1.setAttribute('src', '../img/main-photo.png');
-    img2.setAttribute('src', '../img/dish.png');
+    img1.setAttribute('src', '../src/img/main-photo.png');
+    img2.setAttribute('src', '../src/img/dish.png');
 
     h1.textContent = "Best food for you in Annisssimo's";
     p.textContent = "Experience the finest dining with a touch of perfection at Annisssimo's restaurant. Our chefs craft exquisite dishes that tantalize your taste buds, and our warm ambiance ensures an unforgettable dining experience.";
