@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(255, 240, 224);
 }
 
 header {
@@ -18,10 +19,13 @@ header {
 }
 
 #content {
+    padding: 48px 0px;
+    max-width: 1219px;
+}
+
+.flex {
     display: flex;
     gap: 64px;
-    padding: 64px 0px;
-    max-width: 1219px;
 }
 
 #logo {
@@ -61,12 +65,12 @@ button {
     margin-right: 24px;
 }
 
-img[src="../src/img/main-photo.png"] {
+#main-photo {
     width: 390px;
     height: auto;
 }
 
-img[src="../src/img/dish.png"] {
+#dish {
     width: 260px;
     position: relative;
     left: -128px;
@@ -79,4 +83,46 @@ img[src="../src/img/dish.png"] {
 
 h1 {
     font-size: 64px;
+}
+
+p {
+    margin-bottom: 48px;
+}
+
+.menu-heading {
+    font-size: 40px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.menu-items-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.menu-item {
+    border: 2px solid white;
+    border-radius: 48px 4px;
+    padding: 24px;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.655);
+}
+
+.menu-item-img {
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.menu-item-description {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color:rgb(46, 46, 46);
 }
