@@ -25,7 +25,11 @@ header {
 
 .flex {
     display: flex;
-    gap: 64px;
+    gap: 168px;
+}
+
+.images-div {
+    position: relative;
 }
 
 #logo {
@@ -72,9 +76,9 @@ button {
 
 #dish {
     width: 260px;
-    position: relative;
-    left: -128px;
-    top: -200px;
+    position: absolute;
+    bottom: 20px;
+    right: 280px;
 }
 
 .home-text {

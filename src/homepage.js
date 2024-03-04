@@ -16,6 +16,7 @@ export function generateHomePage() {
 
     contentDiv.classList.add('flex');
     homeTextDiv.classList.add('home-text');
+    homeImagesDiv.classList.add('images-div');
     menuBtn.classList.add('menu-button');
     bookBtn.classList.add('book-btn');
     img1.id = 'main-photo';
