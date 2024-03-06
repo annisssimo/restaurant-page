@@ -47,6 +47,24 @@ button {
     font-family: inherit;
     font-size: inherit;
     border: none;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #ff7300;
+}
+
+.menu-button {
+    background: none;
+    background-color:rgb(41, 41, 41);
+    padding: 10px 20px;
+    border-radius: 12px 2px;
+    color: white;
+    margin-right: 24px;
+}
+
+.menu-button:hover {
+    background-color:black;
 }
 
 .link {
@@ -55,6 +73,7 @@ button {
 
 .link:hover {
     text-decoration: underline;
+    color: #ff7300;
 }
 
 .book-btn {
@@ -62,15 +81,6 @@ button {
     padding: 10px 20px;
     border-radius: 12px 2px;
     color: white;
-}
-
-.menu-button {
-    background: none;
-    background-color: black;
-    padding: 10px 20px;
-    border-radius: 12px 2px;
-    color: white;
-    margin-right: 24px;
 }
 
 #main-photo {

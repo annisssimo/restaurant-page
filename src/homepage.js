@@ -1,3 +1,6 @@
+import { generateMenuPage } from './menu';
+import { generateBookingForm } from './book-form';
+
 import MainPhoto from './img/main-photo.png';
 import Dish from './img/dish.png';
 
@@ -42,4 +45,7 @@ export function generateHomePage() {
 
     homeImagesDiv.appendChild(img1);
     homeImagesDiv.appendChild(img2);
+
+    bookBtn.addEventListener('click', () => generateBookingForm());
+    menuBtn.addEventListener('click', () => generateMenuPage());
 }
