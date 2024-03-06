@@ -24,6 +24,10 @@ header {
     max-width: 1219px;
 }
 
+::selection {
+    background-color: rgba(255, 186, 68, 0.918);
+}
+
 .flex {
     display: flex;
 }
