@@ -2,6 +2,8 @@ import MainPhoto from './img/main-photo.png';
 import Dish from './img/dish.png';
 
 export function generateHomePage() {
+    content.innerHTML = '';
+
     const contentDiv = document.getElementById('content');
 
     const homeTextDiv = document.createElement('div');
@@ -15,6 +17,7 @@ export function generateHomePage() {
     const img2 = document.createElement('img');
 
     contentDiv.classList.add('flex');
+    contentDiv.style.gap = '168px';
     homeTextDiv.classList.add('home-text');
     homeImagesDiv.classList.add('images-div');
     menuBtn.classList.add('menu-button');
