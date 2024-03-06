@@ -1,3 +1,7 @@
+import Twig1 from './img/twig-1.png';
+import Twig2 from './img/twig-2.png';
+import Twig3 from './img/twig-3.png';
+
 export function generateAboutPage() {
     content.innerHTML = '';
     content.classList.add('flex');
@@ -21,7 +25,7 @@ export function generateAboutPage() {
     const visitUsPara = document.createElement("p");
 
     const contactInfoContainer = document.createElement("div");
-    const address = "123 Main Street, Cityville, Country";
+    const address = "123 Main Street, Drogichin, Belarus";
     const phone = "+123 456 7890";
     const email = "info@annisssimos.com";
     const businessHours = "Monday - Sunday: 12:00 PM - 10:00 PM";
