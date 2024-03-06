@@ -5,6 +5,7 @@ import Twig3 from './img/twig-3.png';
 export function generateAboutPage() {
     content.innerHTML = '';
     content.classList.add('flex');
+    content.style.gap = '64px';
 
     const aboutUsDiv = document.createElement('div');
     const mapAndAddressDiv = document.createElement('div');
@@ -44,6 +45,7 @@ export function generateAboutPage() {
     warmHospitalityPara.textContent = "At Annisssimo's, we believe in more than just great food; we believe in creating lasting memories. Our attentive and friendly staff is dedicated to ensuring that your dining experience is nothing short of extraordinary. From the moment you step through our doors, expect to be treated like family.";
     
     visitUsHeading.textContent = "Visit Us";
+    visitUsHeading.style.marginTop = '0px';
     visitUsPara.textContent = "We invite you to join us at Annisssimo's and experience the perfect fusion of flavors, warmth, and community. Whether you're celebrating a special occasion, enjoying a night out with friends, or simply craving a culinary adventure, we look forward to serving you.";
 
     
